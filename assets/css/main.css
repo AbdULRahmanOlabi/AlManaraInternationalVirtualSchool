@@ -86,6 +86,10 @@ h6 {
   font-family: var(--heading-font);
 }
 
+html[lang="ar"] {
+  direction: rtl;
+}
+
 /* Pulsating Play Button
 ------------------------------*/
 .pulsating-play-btn {
@@ -290,6 +294,20 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Global Header - Ar
+--------------------------------------------------------------*/
+
+html[lang="ar"] .logo {
+  margin-left: 350px;
+  margin-right: 0;
+}
+
+html[lang="ar"] .btn-getstarted {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
@@ -326,7 +344,7 @@ h6 {
 
   .navmenu a i,
   .navmenu a:focus i {
-    font-size: 12px;
+    font-size: 18px;
     line-height: 0;
     margin-left: 5px;
     transition: 0.3s;
@@ -960,6 +978,12 @@ section,
   color: var(--accent-color);
 }
 
+html[lang="ar"] .about ul i {
+  font-size: 20px;
+  padding-left: 4px;
+  color: var(--accent-color);
+}
+
 .about .read-more {
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -982,12 +1006,23 @@ section,
   transition: 0.3s;
 }
 
+html[lang="ar"] .about .read-more i {
+  font-size: 18px;
+  margin-right: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
 .about .read-more:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .about .read-more:hover i {
   transform: translate(5px, 0);
+}
+
+html[lang="ar"] .about .read-more:hover i {
+  transform: translate(-5px, 0);
 }
 
 /*--------------------------------------------------------------
@@ -1039,6 +1074,13 @@ section,
 .about-alt .content ul i {
   color: var(--accent-color);
   margin-right: 0.5rem;
+  line-height: 1.2;
+  font-size: 1.25rem;
+}
+
+html[lang="ar"] .about-alt .content ul i {
+  color: var(--accent-color);
+  margin-left: 0.5rem;
   line-height: 1.2;
   font-size: 1.25rem;
 }
@@ -1667,7 +1709,7 @@ section,
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--accent-color);
+  color: var(--accent-color); /* Fix hover color */
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1716,7 +1758,32 @@ section,
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--accent-color);
+}
+
+/* RTL Styles for Arabic */
+html[lang="ar"] .faq .faq-container .faq-item h3 {
+  margin: 0 0 0 30px;
+  text-align: right;
+}
+
+html[lang="ar"] .faq .faq-container .faq-item .faq-toggle {
+  right: unset;
+  left: 20px;
+}
+
+html[lang="ar"] .faq .faq-container .faq-item .faq-content {
+  text-align: right;
+}
+
+html[lang="ar"] .faq .faq-container .faq-item.faq-active {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+html[lang="ar"] .faq .faq-container .faq-item.faq-active h3 {
+  color: var(--contrast-color);
+  text-align: right;
 }
 
 /*--------------------------------------------------------------
@@ -1738,6 +1805,20 @@ section,
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+}
+
+html[lang="ar"] .contact .info-item i {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  margin-left: 15px;
 }
 
 .contact .info-item h3 {
