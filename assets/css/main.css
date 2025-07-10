@@ -297,14 +297,16 @@ html[lang="ar"] {
 # Global Header - Ar
 --------------------------------------------------------------*/
 
-html[lang="ar"] .logo {
-  margin-left: 350px;
-  margin-right: 0;
-}
+@media (min-width: 1200px) {
+  html[lang="ar"] .logo {
+    margin-left: 350px;
+    margin-right: 0;
+  }
 
-html[lang="ar"] .btn-getstarted {
-  margin-left: 0;
-  margin-right: 30px;
+  html[lang="ar"] .btn-getstarted {
+    margin-left: 0;
+    margin-right: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -581,6 +583,7 @@ html[lang="ar"] .btn-getstarted {
 .footer .footer-about p {
   font-size: 14px;
   font-family: var(--heading-font);
+  margin-top: 14px;
 }
 
 .footer .social-links a {
